@@ -1,0 +1,4 @@
+{
+	"name": "user",
+	"template": "./template.jade"
+}

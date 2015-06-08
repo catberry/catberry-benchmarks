@@ -1,0 +1,9 @@
+{
+	"title": "Catberry Project",
+	"server": {
+		"port": 3001
+	},
+	"logger": {
+        "levels": ""
+    }
+}

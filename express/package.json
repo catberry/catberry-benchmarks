@@ -1,0 +1,16 @@
+{
+  "name": "express-benchmark",
+  "version": "1.0.0",
+  "description": "Part of benchmark Catberry-vs-Expresss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denis Rechkunov <denis.rechkunov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.11.2",
+    "express-handlebars": "^1.2.1",
+    "jade": "^1.9.2"
+  }
+}
