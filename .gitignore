@@ -1,0 +1,17 @@
+node_modules
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+*.lnk
+Desktop.ini
+
+# Linux
+*~
+.directory

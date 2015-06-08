@@ -1,0 +1,10 @@
+
+extends ../layout
+
+block content
+  cat-users(id="users", cat-store="Users")
+    h1 Users
+    #users
+      each user, index in users
+        cat-user(id=index, cat-store="Users", index=index)
+          include user
