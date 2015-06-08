@@ -1,4 +1,4 @@
-# Benchmark for Catberry's server-side rendering
+# Benchmark for [Catberry](https://github.com/catberry/catberry)'s server-side rendering
 
 ## Description
 For now, it's just a comparison with bare [express](http://expressjs.com/) application which uses [Jade template engine](http://jade-lang.com/).
@@ -49,3 +49,6 @@ Transfer rate:          215.49 [Kbytes/sec] received
 
 ## Conclusion
 Despite on Catberry's stream-based and component-based rendering engine which has overhead related to usage of stream transformations with HTML parsing it still **has almost the same performance as bare Express with the same template engine**.
+
+## Contributing
+Feel free to submit a PR with your benchmark built in the same way.
