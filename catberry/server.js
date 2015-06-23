@@ -1,8 +1,6 @@
 'use strict';
 
-var catberry = require('catberry'),
-	isRelease = process.argv.length === 3 ?
-		process.argv[2] === 'release' : undefined;
+var catberry = require('catberry');
 
 var http = require('http'),
 	util = require('util'),
@@ -21,7 +19,7 @@ var READY_MESSAGE = 'Ready to handle incoming requests on port %d';
 
 config.publicPath = publicPath;
 config.server.port = config.server.port || 3001;
-config.isRelease = isRelease === undefined ? config.isRelease : isRelease;
+config.isRelease = true;
 
 templateEngine.register(cat.locator);
 
