@@ -7,19 +7,17 @@ var http = require('http'),
 	path = require('path'),
 	publicPath = path.join(__dirname, 'public'),
 	connect = require('connect'),
-	config = require('./config/environment.json'),
+	app = connect(),
 	templateEngine = require('catberry-jade'),
-	cat = catberry.create(config),
-	app = connect();
-
-var logger = cat.locator.resolve('logger');
-logger.setLevel('ERROR');
-
-var READY_MESSAGE = 'Ready to handle incoming requests on port %d';
+	config = require('./config/environment.json');
 
 config.publicPath = publicPath;
 config.server.port = config.server.port || 3001;
 config.isRelease = true;
+	
+var cat = catberry.create(config),
+	logger = cat.locator.resolve('logger');
+logger.setLevel('ERROR');
 
 templateEngine.register(cat.locator);
 
@@ -30,11 +28,6 @@ app.use(cat.getMiddleware());
 
 var errorhandler = require('errorhandler');
 app.use(errorhandler());
-
-cat.events.on('ready', function () {
-	var logger = cat.locator.resolve('logger');
-	logger.info(util.format(READY_MESSAGE, config.server.port));
-});
 
 http
 	.createServer(app)
