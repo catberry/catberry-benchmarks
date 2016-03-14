@@ -1,4 +1,8 @@
 node_modules
+.idea
+*.log
+catberry/__BrowserBundle.js
+catberry/public/bundle.js
 
 # OS X
 .DS_Store
