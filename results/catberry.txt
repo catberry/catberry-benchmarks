@@ -1,5 +1,5 @@
 ===Catberry===
-This is ApacheBench, Version 2.3 <$Revision: 1604373 $>
+This is ApacheBench, Version 2.3 <$Revision: 1663405 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
@@ -14,30 +14,30 @@ Document Path:          /
 Document Length:        1717 bytes
 
 Concurrency Level:      10
-Time taken for tests:   26.143 seconds
+Time taken for tests:   8.474 seconds
 Complete requests:      3000
 Failed requests:        0
 Total transferred:      5568000 bytes
 HTML transferred:       5151000 bytes
-Requests per second:    114.76 [#/sec] (mean)
-Time per request:       87.142 [ms] (mean)
-Time per request:       8.714 [ms] (mean, across all concurrent requests)
-Transfer rate:          207.99 [Kbytes/sec] received
+Requests per second:    354.02 [#/sec] (mean)
+Time per request:       28.247 [ms] (mean)
+Time per request:       2.825 [ms] (mean, across all concurrent requests)
+Transfer rate:          641.66 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.2      0       5
-Processing:    67   86  13.8     84     223
-Waiting:       36   79  13.2     77     212
-Total:         67   87  13.8     84     223
+Connect:        0    1   0.6      1      19
+Processing:    10   27   6.2     26      67
+Waiting:        9   26   5.9     24      67
+Total:         12   28   6.2     26      68
 
 Percentage of the requests served within a certain time (ms)
-  50%     84
-  66%     90
-  75%     93
-  80%     95
-  90%    104
-  95%    110
-  98%    124
-  99%    128
- 100%    223 (longest request)
+  50%     26
+  66%     28
+  75%     30
+  80%     31
+  90%     35
+  95%     40
+  98%     47
+  99%     52
+ 100%     68 (longest request)

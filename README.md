@@ -16,39 +16,39 @@ Both applications should:
 
 ## Results
 You can find the results in the `./results` directory which are received on such configuration:
- * MacBook Pro (Retina, 13-inch, Late 2012)
- * 2.5 GHz Intel Core i5
- * 8 GB 1600 MHz DDR3
- * Intel HD Graphics 4000 1024 MB
- * OS X 10.10.3 (14D136)
- * catberry@5.2.0
- * express@4.12.4
+ * MacBook Pro (Retina, 13-inch, Early 2015)
+ * 2,7 GHz Intel Core i5
+ * 8 GB 1867 MHz DDR3
+ * Intel Iris Graphics 6100 1536 MB
+ * OS X 10.11.3
+ * catberry@8.0.2
+ * express@4.13.4
 
 ```
 node --version
-v1.8.1
+v5.8.0
 ```
 
 Here are the main numbers:
 
 ### Catberry
 ```
-Requests per second:    114.76 [#/sec] (mean)
-Time per request:       87.142 [ms] (mean)
-Time per request:       8.714 [ms] (mean, across all concurrent requests)
-Transfer rate:          207.99 [Kbytes/sec] received
+Requests per second:    354.02 [#/sec] (mean)
+Time per request:       28.247 [ms] (mean)
+Time per request:       2.825 [ms] (mean, across all concurrent requests)
+Transfer rate:          641.66 [Kbytes/sec] received
 ```
 
 ### Express
 ```
-Requests per second:    115.41 [#/sec] (mean)
-Time per request:       86.648 [ms] (mean)
-Time per request:       8.665 [ms] (mean, across all concurrent requests)
-Transfer rate:          215.49 [Kbytes/sec] received
+Requests per second:    154.88 [#/sec] (mean)
+Time per request:       64.566 [ms] (mean)
+Time per request:       6.457 [ms] (mean, across all concurrent requests)
+Transfer rate:          289.49 [Kbytes/sec] received
 ```
 
 ## Conclusion
-Despite on Catberry's stream-based and component-based rendering engine which has overhead related to usage of stream transformations with HTML parsing it still **has almost the same performance as bare Express with the same template engine**.
+Despite on Catberry's stream-based and component-based rendering engine which has overhead related to usage of stream transformations with HTML parsing it **has better performance than a bare Express with the same template engine at least on small size of data**.
 
 ## Contributing
-Feel free to submit a PR with your benchmark built in the same way.
+Feel free to submit a PR with your benchmark built the same way.
