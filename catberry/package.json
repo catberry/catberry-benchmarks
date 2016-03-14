@@ -4,25 +4,26 @@
 	"description": "Empty project based on Catberry Framework",
 	"main": "./server.js",
 	"browser": {
-		"./config/environment.js": "./config/browser.js"
+		"./config/environment.json": "./config/browser.json"
 	},
 	"author": "Catberry",
 	"license": "MIT",
 	"dependencies": {
-		"catberry": "^5.2.0",
-		"catberry-jade": "^1.0.0",
-		"connect": "^3.0.0",
-		"serve-static": "^1.0.0",
-		"errorhandler": "^1.0.0"
+		"catberry": "^8.0.0",
+		"catberry-jade": "^2.0.0",
+		"catberry-uhr": "^5.0.0",
+		"catberry-logger": "^1.0.0",
+		"express": "^4.13.4",
+		"serve-static": "^1.10.2",
+		"errorhandler": "^1.4.3"
 	},
 	"engines": {
-		"node": ">=0.10"
+		"node": ">=4"
 	},
 	"scripts": {
 		"start": "npm run release",
 		"release": "node ./build.js release && node ./server.js release",
 		"debug": "node ./build.js & node ./server.js",
-		"debug-win": "start /B node ./build.js && start /B node ./server.js"
+		"debug-win": "powershell -Command \"Start-Process -NoNewWindow node ./build.js; Start-Process -NoNewWindow -Wait node ./server.js\""
 	}
 }
-

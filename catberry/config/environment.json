@@ -4,6 +4,6 @@
 		"port": 3001
 	},
 	"logger": {
-        "levels": ""
-    }
+		"level": 60
+	}
 }
