@@ -35,4 +35,4 @@ All changes should satisfy this [Code Style Guide](https://github.com/catberry/c
 
 Also your changes should be covered by unit tests using [mocha](https://www.npmjs.org/package/mocha).
 
-Denis Rechkunov <denis.rechkunov@gmail.com>
+Denis Rechkunov <denis@rdner.de>

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Denis Rechkunov <denis.rechkunov@gmail.com>",
+  "author": "Denis Rechkunov <denis@rdner.de>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
